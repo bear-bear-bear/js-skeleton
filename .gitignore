@@ -12,5 +12,5 @@ node_modules
 *~
 
 # 트랜스 컴파일된 ES5
-dist
-public/dist
+dist/**
+public/dist/**
