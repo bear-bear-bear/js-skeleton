@@ -30,19 +30,19 @@ module.exports = {
     filename: "[name].js",
   },
 
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.js$/,
-  //       exclude: path.resolve(__dirname, "node_modules"),
-  //       // exclude: exclude.exportList("js"),
-  //       use: {
-  //         loader: "babel-loader",
-  //         options: {
-  //           presets: ["env"],
-  //         },
-  //       },
-  //     },
-  //   ],
-  // },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: path.resolve(__dirname, "node_modules"),
+        // exclude: exclude.exportList("js"),
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
+  },
 };

@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Utils; });\nclass Utils {\r\n  static log(msg) {\r\n    console.log(\"[LOG] \" + msg);\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack:///./src/es6/Utils.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Utils; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Utils = /*#__PURE__*/function () {\n  function Utils() {\n    _classCallCheck(this, Utils);\n  }\n\n  _createClass(Utils, null, [{\n    key: \"log\",\n    value: function log(msg) {\n      console.log(\"[LOG] \" + msg);\n    }\n  }]);\n\n  return Utils;\n}();\n\n\n\n//# sourceURL=webpack:///./src/es6/Utils.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Utils */ \"./src/es6/Utils.js\");\n\r\n_Utils__WEBPACK_IMPORTED_MODULE_0__[\"default\"].log(\"Hello webpack\");\r\n\n\n//# sourceURL=webpack:///./src/es6/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Utils */ \"./src/es6/Utils.js\");\n\n_Utils__WEBPACK_IMPORTED_MODULE_0__[\"default\"].log(\"Hello webpack\");\n\n//# sourceURL=webpack:///./src/es6/main.js?");
 
 /***/ })
 
