@@ -3,15 +3,21 @@ const ENTRY_FILE = path.resolve(__dirname, "src", "es6", "main.js");
 const OUTPUT_DIR = path.resolve(__dirname, "public", "src", "es5");
 const MODE = "development";
 
+// // Apply this function when there are many items to be excluded from the module during bundling.
+// // exclude: exclude.exportList(extName) ( ex - exclude: exclude.exportList("js") )
 // const exclude = {
 //   exportList: function (ext) {
 //     const path = require("path");
 
 //     for (let [name, list] of Object.entries(this)) {
 //       if (name === ext) {
-//         let absolutePath = path.resolve(__dirname, ...list[0]);
+//         let absolutePathList = [];
 
-//         return absolutePath;
+//         for (let relativePath of list) {
+//           absolutePathList.push(path.resolve(__dirname, ...relativePath));
+//         }
+
+//         return absolutePathList;
 //       }
 //     }
 //   },
@@ -34,8 +40,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: path.resolve(__dirname, "node_modules"),
-        // exclude: exclude.exportList("js"),
+        exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
