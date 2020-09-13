@@ -1,4 +1,4 @@
-import Style from "../scss/main.scss";
-import Test from "./Test";
+import css from "../scss/main.scss";
+import js from "./Test";
 
-Test.log("Hello webpack");
+js.log("Hello webpack");

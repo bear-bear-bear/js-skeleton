@@ -2,11 +2,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const ENTRY_FILE = path.resolve(__dirname, "es6", "js", "main.js");
 const OUTPUT_DIR = path.resolve(__dirname, "public", "es5", "js");
-const CSS_DIR = path.resolve(__dirname, "public", "es5", "css");
 const MODE = "development";
 
 // // Apply this function when there are many items to be excluded from the module during bundling.
-// // exclude: exclude.exportList(extName) ( ex - exclude: exclude.exportList("js") )
+// // exclude: exclude.exportList(exclude.key)
 // const exclude = {
 //   exportList: function (ext) {
 //     const path = require("path");
@@ -35,7 +34,7 @@ module.exports = {
 
   output: {
     path: OUTPUT_DIR,
-    filename: "index.js",
+    filename: "bundle.js",
   },
 
   module: {
@@ -53,6 +52,19 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|ico)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192, // ( file-size > limit ) ? use file-loader
+              name: "../img/[name].[ext]?[hash]",
+              publicPath: "../img/",
+            },
+          },
+        ],
       },
     ],
   },
