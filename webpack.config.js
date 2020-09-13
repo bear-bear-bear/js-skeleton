@@ -34,7 +34,7 @@ module.exports = {
 
   output: {
     path: OUTPUT_DIR,
-    filename: "[name].js",
+    filename: "index.js",
   },
 
   module: {
@@ -51,8 +51,9 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
+  plugins: [new MiniCssExtractPlugin({ filename: "style.css" })],
 };
