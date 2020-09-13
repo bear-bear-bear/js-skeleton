@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const ENTRY_FILE = path.resolve(__dirname, "src", "es6", "main.js");
 const OUTPUT_DIR = path.resolve(__dirname, "public", "src", "es5");
