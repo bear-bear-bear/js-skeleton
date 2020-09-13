@@ -2,7 +2,7 @@
 
 # js-skeleton
 
-##### gulp-babel, eslint로 구성하는 ES6 자바스크립트 개발 환경
+##### webpack, babel, eslint로 구성하는 ES6 자바스크립트 개발 환경
 
 [![@babel/core](https://img.shields.io/badge/%40babel%2Fcore-7.11.6-%2327C93F)]()
 [![@babel/preset-env](https://img.shields.io/badge/%40babel%2Fpreset--env-7.11.5-%2327C93F)]()
