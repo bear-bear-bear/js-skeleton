@@ -59,9 +59,9 @@ module.exports = {
           {
             loader: "url-loader",
             options: {
-              limit: 8192, // ( file-size > limit ) ? use file-loader
-              name: "../img/[name].[ext]?[hash]",
+              limit: 8192, // (file-size > limit) ? use file-loader
               publicPath: "../img/",
+              name: "../img/[name].[ext]?[hash]", //  (mode == "production") ? name: "../img/[hash].[ext]",
             },
           },
         ],
