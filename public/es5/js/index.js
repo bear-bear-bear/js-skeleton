@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./es6/css/main.css":
-/*!**************************!*\
-  !*** ./es6/css/main.css ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./es6/css/main.css?");
-
-/***/ }),
-
 /***/ "./es6/js/Test.js":
 /*!************************!*\
   !*** ./es6/js/Test.js ***!
@@ -117,7 +106,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.css */ \"./es6/css/main.css\");\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./es6/js/Test.js\");\n\n\n_Test__WEBPACK_IMPORTED_MODULE_1__[\"default\"].log(\"Hello webpack\");\n\n//# sourceURL=webpack:///./es6/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./es6/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./es6/js/Test.js\");\n\n\n_Test__WEBPACK_IMPORTED_MODULE_1__[\"default\"].log(\"Hello webpack\");\n\n//# sourceURL=webpack:///./es6/js/main.js?");
+
+/***/ }),
+
+/***/ "./es6/scss/main.scss":
+/*!****************************!*\
+  !*** ./es6/scss/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./es6/scss/main.scss?");
 
 /***/ })
 
