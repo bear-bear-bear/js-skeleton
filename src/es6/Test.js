@@ -1,4 +1,4 @@
-export default class Utils {
+export default class Test {
   static log(msg) {
     console.log("[LOG] " + msg);
   }

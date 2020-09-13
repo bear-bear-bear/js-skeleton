@@ -1,2 +1,3 @@
-import Utils from "./Utils";
-Utils.log("Hello webpack");
+/* test */
+import Test from "./Test";
+Test.log("Hello webpack");
