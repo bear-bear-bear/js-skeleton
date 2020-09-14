@@ -1,10 +1,11 @@
 /*-- css --*/
-import css from "../scss/main.scss";
+import "../scss/main.scss";
 
 /*-- js --*/
-import jsTest from "./Test";
+import "./Test";
 
 js.log("Hello webpack");
 
 /*-- pug --*/
-import htmlTest from "../../views/test.pug";
+import "../../views/index.pug";
+import "../../views/test.pug";
