@@ -48,7 +48,7 @@ module.exports = {
       {
         test: /\.pug$/,
         use: [
-          "file-loader?name=../[path][name].html",
+          "file-loader?name=html/[name].html",
           "extract-loader",
           "html-loader",
           "pug-html-loader",
