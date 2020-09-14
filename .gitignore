@@ -10,7 +10,4 @@ node_modules
 # 임시 파일
 *.tmp
 *~
-
-# 트랜스 컴파일된 ES5
-dist/**
-public/dist/**
+_html
