@@ -1,7 +1,11 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const ENTRY_FILE = path.resolve(__dirname, "src", "assets", "es6", "main.js");
-const OUTPUT_DIR = path.resolve(__dirname, "public", "es5");
+const ENTRY_FILE = [
+  path.resolve(__dirname, "src", "assets", "es6", "main.js"),
+  path.resolve(__dirname, "src", "views", "index.pug"),
+];
+const OUTPUT_DIR = path.resolve(__dirname, "public", "src", "es5");
 const MODE = "development";
 
 module.exports = {
@@ -12,6 +16,7 @@ module.exports = {
   output: {
     path: OUTPUT_DIR,
     filename: "bundle.js",
+    publicPath: "/public/",
   },
 
   module: {
@@ -43,11 +48,33 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.pug$/,
+        use: ["pug-loader"],
+      },
     ],
+  },
+  devServer: {
+    contentBase: __dirname + "/dist/",
+    hot: true,
+    open: true,
+    host: "localhost",
+    port: 3000,
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "../css/style.css",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.pug",
+    }),
   ],
 };
+
+// module.exports = (env, argv) => {
+//   if (argv.mode === "development") {
+//   }
+//   if (argv.mode === "production") {
+//   }
+//   return config;
+// };

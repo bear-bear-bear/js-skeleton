@@ -1,0 +1,11 @@
+extends test.pug
+
+block content
+    p Hello world!
+    .image-test-wrapper
+        img.image-test__first(src='#')
+    .image-test-wrapper
+        img.image-test__second(src='#')
+    .image-test-wrapper
+        img.image-test__third(src='#')
+    script(src='./src/public/es5/js/index.js')
