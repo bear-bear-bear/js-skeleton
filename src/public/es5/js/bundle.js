@@ -81,43 +81,43 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./es6/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/es6/js/main.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./es6/js/Test.js":
-/*!************************!*\
-  !*** ./es6/js/Test.js ***!
-  \************************/
+/***/ "./src/es6/js/Test.js":
+/*!****************************!*\
+  !*** ./src/es6/js/Test.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Test; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Test = /*#__PURE__*/function () {\n  function Test() {\n    _classCallCheck(this, Test);\n  }\n\n  _createClass(Test, null, [{\n    key: \"log\",\n    value: function log(msg) {\n      console.log(\"[LOG] \" + msg);\n    }\n  }]);\n\n  return Test;\n}();\n\n\n\n//# sourceURL=webpack:///./es6/js/Test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Test; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Test = /*#__PURE__*/function () {\n  function Test() {\n    _classCallCheck(this, Test);\n  }\n\n  _createClass(Test, null, [{\n    key: \"log\",\n    value: function log(msg) {\n      console.log(\"[LOG] \" + msg);\n    }\n  }]);\n\n  return Test;\n}();\n\n\n\n//# sourceURL=webpack:///./src/es6/js/Test.js?");
 
 /***/ }),
 
-/***/ "./es6/js/main.js":
-/*!************************!*\
-  !*** ./es6/js/main.js ***!
-  \************************/
+/***/ "./src/es6/js/main.js":
+/*!****************************!*\
+  !*** ./src/es6/js/main.js ***!
+  \****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./es6/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./es6/js/Test.js\");\n\n\n_Test__WEBPACK_IMPORTED_MODULE_1__[\"default\"].log(\"Hello webpack\");\n\n//# sourceURL=webpack:///./es6/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/es6/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./src/es6/js/Test.js\");\n\n\n_Test__WEBPACK_IMPORTED_MODULE_1__[\"default\"].log(\"Hello webpack\");\n\n//# sourceURL=webpack:///./src/es6/js/main.js?");
 
 /***/ }),
 
-/***/ "./es6/scss/main.scss":
-/*!****************************!*\
-  !*** ./es6/scss/main.scss ***!
-  \****************************/
+/***/ "./src/es6/scss/main.scss":
+/*!********************************!*\
+  !*** ./src/es6/scss/main.scss ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./es6/scss/main.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/es6/scss/main.scss?");
 
 /***/ })
 

@@ -1,7 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
-const ENTRY_FILE = path.resolve(__dirname, "es6", "js", "main.js");
-const OUTPUT_DIR = path.resolve(__dirname, "public", "es5", "js");
+const ENTRY_FILE = path.resolve(__dirname, "src", "es6", "js", "main.js");
+const OUTPUT_DIR = path.resolve(__dirname, "src", "public", "es5", "js");
 const MODE = "development";
 
 // // Apply this function when there are many items to be excluded from the module during bundling.
