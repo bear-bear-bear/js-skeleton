@@ -19,19 +19,21 @@
   "homepage": "https://github.com/bear-bear-bear/learning-javascript#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "html-webpack-plugin": "^4.4.1",
+    "pug-loader": "^2.4.0",
     "css-loader": "^4.3.0",
-    "eslint": "^7.8.1",
-    "file-loader": "^6.1.0",
-    "mini-css-extract-plugin": "^0.11.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
+    "mini-css-extract-plugin": "^0.11.2",
     "style-loader": "^1.2.1",
+    "file-loader": "^6.1.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "eslint": "^7.8.1"
   }
 }
