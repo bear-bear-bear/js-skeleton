@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/public/";
+/******/ 	__webpack_require__.p = "./src/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -140,7 +140,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EDocument\\u003C\\u002Ftitle\\u003E\\u003Clink rel=\\\"stylesheet\\\" href=\\\"..\\u002Fsrc\\u002Fpublic\\u002Fes5\\u002Fcss\\u002Fstyle.css\\\"\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cp\\u003EHello world!\\u003C\\u002Fp\\u003E\\u003Cdiv class=\\\"image-test-wrapper\\\"\\u003E\\u003Cimg class=\\\"image-test__first\\\" src=\\\"#\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"image-test-wrapper\\\"\\u003E\\u003Cimg class=\\\"image-test__second\\\" src=\\\"#\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"image-test-wrapper\\\"\\u003E\\u003Cimg class=\\\"image-test__third\\\" src=\\\"#\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cscript src=\\\".\\u002Fsrc\\u002Fpublic\\u002Fes5\\u002Fjs\\u002Findex.js\\\"\\u003E\\u003C\\u002Fscript\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./src/views/index.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EDocument\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cp\\u003EHello world!\\u003C\\u002Fp\\u003E\\u003Cdiv class=\\\"image-test-wrapper\\\"\\u003E\\u003Cimg class=\\\"image-test__first\\\" src=\\\"#\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"image-test-wrapper\\\"\\u003E\\u003Cimg class=\\\"image-test__second\\\" src=\\\"#\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"image-test-wrapper\\\"\\u003E\\u003Cimg class=\\\"image-test__third\\\" src=\\\"#\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./src/views/index.pug?");
 
 /***/ }),
 

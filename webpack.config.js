@@ -5,7 +5,7 @@ const ENTRY_FILE = [
   path.resolve(__dirname, "src", "assets", "es6", "main.js"),
   path.resolve(__dirname, "src", "views", "index.pug"),
 ];
-const OUTPUT_DIR = path.resolve(__dirname, "public", "src", "es5");
+const OUTPUT_DIR = path.resolve(__dirname, "public", "src");
 const MODE = "development";
 
 module.exports = {
@@ -15,8 +15,8 @@ module.exports = {
 
   output: {
     path: OUTPUT_DIR,
-    filename: "bundle.js",
-    publicPath: "/public/",
+    filename: "es5/bundle.js",
+    publicPath: "./src/",
   },
 
   module: {
@@ -42,8 +42,8 @@ module.exports = {
             loader: "url-loader",
             options: {
               limit: 8192, // (file-size > limit) ? use file-loader
-              publicPath: "../img/",
-              name: "../img/[name].[ext]?[hash]", //  (mode == "production") ? name: "../img/[hash].[ext]",
+              publicPath: "img/",
+              name: "img/[name].[ext]?[hash]", //  (mode == "production") ? name: "../img/[hash].[ext]",
             },
           },
         ],
@@ -63,10 +63,11 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "../css/style.css",
+      filename: "css/style.css",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/index.pug",
+      template: "./src/views/index.pug",
+      filename: "../index.html",
     }),
   ],
 };
