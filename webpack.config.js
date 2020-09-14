@@ -4,29 +4,6 @@ const ENTRY_FILE = path.resolve(__dirname, "src", "es6", "js", "main.js");
 const OUTPUT_DIR = path.resolve(__dirname, "src", "public", "es5", "js");
 const MODE = "development";
 
-// // Apply this function when there are many items to be excluded from the module during bundling.
-// // exclude: exclude.exportList(exclude.key)
-// const exclude = {
-//   exportList: function (ext) {
-//     const path = require("path");
-
-//     for (let [name, list] of Object.entries(this)) {
-//       if (name === ext) {
-//         let absolutePathList = [];
-
-//         for (let relativePath of list) {
-//           absolutePathList.push(path.resolve(__dirname, ...relativePath));
-//         }
-
-//         return absolutePathList;
-//       }
-//     }
-//   },
-
-//   js: ["node_modules"],
-//   /* ... */
-// };
-
 module.exports = {
   mode: MODE,
 
