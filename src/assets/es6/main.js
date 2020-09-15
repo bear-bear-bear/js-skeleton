@@ -2,9 +2,9 @@
 import "../scss/main.scss";
 
 /*-- js --*/
-import "./Test";
+import test from "./Test";
 
-js.log("Hello webpack");
+test.log("Hello webpack");
 
 /*-- pug --*/
 import "../../views/index.pug";
