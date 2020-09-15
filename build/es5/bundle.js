@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./src/";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/assets/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./src/assets/es6/Test.js\");\n/* harmony import */ var _views_index_pug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../views/index.pug */ \"./src/views/index.pug\");\n/* harmony import */ var _views_test_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../views/test.pug */ \"./src/views/test.pug\");\n/*-- css --*/\n\n/*-- js --*/\n\n\njs.log(\"Hello webpack\");\n/*-- pug --*/\n\n\n\n\n//# sourceURL=webpack:///./src/assets/es6/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/assets/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./src/assets/es6/Test.js\");\n/* harmony import */ var _views_index_pug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../views/index.pug */ \"./src/views/index.pug\");\n/* harmony import */ var _views_test_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../views/test.pug */ \"./src/views/test.pug\");\n/*-- css --*/\n\n/*-- js --*/\n\n\n_Test__WEBPACK_IMPORTED_MODULE_1__[\"default\"].log(\"Hello webpack\");\n/*-- pug --*/\n\n\n\n\n//# sourceURL=webpack:///./src/assets/es6/main.js?");
 
 /***/ }),
 

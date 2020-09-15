@@ -1,8 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const ENTRY_FILE = path.resolve(__dirname, "src", "assets", "es6", "main.js");
-const OUTPUT_DIR = path.resolve(__dirname, "public");
+const OUTPUT_DIR = path.resolve(__dirname, "build");
 const MODE = "development";
 
 module.exports = {
@@ -13,7 +12,7 @@ module.exports = {
   output: {
     path: OUTPUT_DIR,
     filename: "es5/bundle.js",
-    publicPath: "./src/",
+    publicPath: "./",
   },
 
   module: {
