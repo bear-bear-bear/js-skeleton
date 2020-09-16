@@ -57,9 +57,10 @@ module.exports = {
   },
   devServer: {
     hot: true,
+    inline: true,
     open: true,
     host: "localhost",
-    port: 3000,
+    stats: "errors-only",
   },
   plugins: [
     new MiniCssExtractPlugin({
