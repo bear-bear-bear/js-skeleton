@@ -7,6 +7,14 @@ const MODE = "development";
 module.exports = {
   mode: MODE,
 
+  devServer: {
+    hot: true,
+    inline: true,
+    open: true,
+    overlay: true,
+    host: "localhost",
+  },
+
   entry: ENTRY_FILE,
 
   output: {
@@ -54,13 +62,6 @@ module.exports = {
         ],
       },
     ],
-  },
-  devServer: {
-    hot: true,
-    inline: true,
-    open: true,
-    host: "localhost",
-    stats: "errors-only",
   },
   plugins: [
     new MiniCssExtractPlugin({
