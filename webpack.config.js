@@ -15,6 +15,9 @@ module.exports = {
     host: "localhost",
   },
 
+  devtool: "inline-source-map",
+  // mode development ? ‘inline-source-map" : 'hidden-source-map’
+
   entry: ENTRY_FILE,
 
   output: {
