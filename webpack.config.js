@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const ENTRY_FILE = path.resolve(__dirname, "src", "assets", "es6", "main.js");
 const OUTPUT_DIR = path.resolve(__dirname, "build");
@@ -28,6 +29,15 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        use: [
+          "file-loader?name=html/[name].html",
+          "extract-loader",
+          "html-loader",
+          "pug-html-loader",
+        ],
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -70,6 +80,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/style.css",
     }),
+    new HtmlWebpackPlugin({}),
   ],
 };
 
