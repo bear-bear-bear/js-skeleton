@@ -34,3 +34,5 @@
 =========
 
 ### 디렉터리 구조, 웹팩 사용 설명 등 >> '\_manual' 디렉터리 참고
+
+<img src="https://github.com/bear-bear-bear/webpack-skeleton_pug-SCSS-babel/blob/master/_manual/%EC%9B%B9%ED%8C%A9%20%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%20%EC%84%B8%EB%B6%80%20%EA%B5%AC%EC%A1%B0.PNG" width="100%">
